@@ -42,7 +42,7 @@
         public String guardar(@ModelAttribute Ciudad ciudad)
         {
             listaCiudades.add(ciudad);
-            return "redirect:/ciudades";
+            return "redirect:/examen";
         }
 
         @GetMapping("/editar/{id}")
