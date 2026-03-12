@@ -8,7 +8,7 @@
     import java.util.List;
 
     @Controller
-    @RequestMapping("/ciudades")
+    @RequestMapping("/examen")
     public class CiudadController {
 
         private static List<Ciudad> listaCiudades = new ArrayList<>();
@@ -56,7 +56,7 @@
         public String actualizar(@ModelAttribute Ciudad ciudad) {
             listaCiudades.removeIf(c -> c.getId() == ciudad.getId());
             listaCiudades.add(ciudad);
-            return "redirect:/ciudades";
+            return "redirect:/examen";
         }
 
         @GetMapping("/eliminar/{id}")
@@ -69,7 +69,7 @@
         @PostMapping("/borrar")
         public String borrar(@RequestParam int id) {
             listaCiudades.removeIf(c -> c.getId() == id);
-            return "redirect:/ciudades";
+            return "redirect:/examen";
         }
 
 
