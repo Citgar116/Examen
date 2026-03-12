@@ -11,6 +11,7 @@
     @RequestMapping("/examen")
     public class CiudadController {
 
+
         private static List<Ciudad> listaCiudades = new ArrayList<>();
 
         static{
