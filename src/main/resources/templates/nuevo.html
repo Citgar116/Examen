@@ -4,7 +4,7 @@
 
 <h2>Nueva Ciudad</h2>
 
-<form th:action="@{/ciudades/guardar}" th:object="${ciudad}" method="post">
+<form th:action="@{/examen/guardar}" th:object="${ciudad}" method="post">
 
     ID: <input th:field="*{id}"><br>
     Nombre: <input th:field="*{nombre}"><br>
@@ -15,7 +15,7 @@
 
 </form>
 
-<a th:href="@{/ciudades}">Regresar</a>
+<a th:href="@{/examen}">Regresar</a>
 
 </body>
 </html>

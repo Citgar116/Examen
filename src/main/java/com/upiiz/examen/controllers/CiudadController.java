@@ -28,7 +28,7 @@
 
         @GetMapping
         public String listar(Model models){
-            models.addAttribute("ciudades", listaCiudades);
+            models.addAttribute("examen", listaCiudades);
             return "listas";
         }
 

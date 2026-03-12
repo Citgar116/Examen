@@ -4,26 +4,26 @@
 
 <h2>Ciudades</h2>
 
-<a th:href="@{/ciudades/nuevo}">Nueva ciudad</a>
+<a th:href="@{/examen/nuevo}">Nueva ciudad</a>
 
 <table border="1">
     <tr>
         <th>ID</th>
         <th>Nombre</th>
-        <th>País</th>
+        <th>Pais</th>
         <th>Poblacion</th>
         <th>Acciones</th>
     </tr>
 
-    <tr th:each="c : ${ciudades}">
+    <tr th:each="c : ${examen}">
         <td th:text="${c.id}"></td>
         <td th:text="${c.nombre}"></td>
         <td th:text="${c.pais}"></td>
         <td th:text="${c.poblacion}"></td>
 
         <td>
-            <a th:href="@{/ciudades/editar/{id}(id=${c.id})}">Editar</a>
-            <a th:href="@{/ciudades/eliminar/{id}(id=${c.id})}">Eliminar</a>
+            <a th:href="@{/examen/editar/{id}(id=${c.id})}">Editar</a>
+            <a th:href="@{/examen/eliminar/{id}(id=${c.id})}">Eliminar</a>
         </td>
 
     </tr>

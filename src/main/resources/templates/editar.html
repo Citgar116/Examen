@@ -4,19 +4,19 @@
 
 <h2>Editar Ciudad</h2>
 
-<form th:action="@{/ciudades/actualizar}" th:object="${ciudad}" method="post">
+<form th:action="@{/examen/actualizar}" th:object="${ciudad}" method="post">
 
     <input type="hidden" th:field="*{id}">
 
     Nombre: <input th:field="*{nombre}"><br>
-    País: <input th:field="*{pais}"><br>
-    Población: <input th:field="*{poblacion}"><br>
+    PaAís: <input th:field="*{pais}"><br>
+    PoblaciONn: <input th:field="*{poblacion}"><br>
 
     <button>Actualizar</button>
 
 </form>
 
-<a th:href="@{/ciudades}">Cancelar</a>
+<a th:href="@{/examen}">Cancelar</a>
 
 </body>
 </html>

@@ -6,12 +6,12 @@
 
 <p th:text="${ciudad.nombre}"></p>
 
-<form th:action="@{/ciudades/borrar}" method="post">
+<form th:action="@{/examen/borrar}" method="post">
     <input type="hidden" name="id" th:value="${ciudad.id}">
     <button>Eliminar</button>
 </form>
 
-<a th:href="@{/ciudades}">Cancelar</a>
+<a th:href="@{/examen}">Cancelar</a>
 
 </body>
 </html>
