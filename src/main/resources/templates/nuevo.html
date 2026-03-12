@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h2>Nueva Ciudad</h2>
+
+<form th:action="@{/ciudades/guardar}" th:object="${ciudad}" method="post">
+
+    ID: <input th:field="*{id}"><br>
+    Nombre: <input th:field="*{nombre}"><br>
+    País: <input th:field="*{pais}"><br>
+    Población: <input th:field="*{poblacion}"><br>
+
+    <button>Guardar</button>
+
+</form>
+
+<a th:href="@{/ciudades}">Regresar</a>
+
+</body>
+</html>

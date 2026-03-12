@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h2>Eliminar Ciudad</h2>
+
+<p th:text="${ciudad.nombre}"></p>
+
+<form th:action="@{/ciudades/borrar}" method="post">
+    <input type="hidden" name="id" th:value="${ciudad.id}">
+    <button>Eliminar</button>
+</form>
+
+<a th:href="@{/ciudades}">Cancelar</a>
+
+</body>
+</html>
